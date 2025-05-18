@@ -4,10 +4,10 @@ import starlight from '@astrojs/starlight';
 import starlightThemeRapide from 'starlight-theme-rapide'
 // https://astro.build/config
 export default defineConfig({
-	site: "https://wellbefore.github.io",
+	site: "https://wellbefore.app",
 	integrations: [
 		starlight({
-			title: 'wellbefore',
+			title: 'WellBefore',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/wellbefore' }],
 			sidebar: [
 				{

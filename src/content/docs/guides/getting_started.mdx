@@ -1,0 +1,19 @@
+---
+title: Getting Started
+description: Guide to how to use the WellBefore app
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+## Onboarding
+
+The WellBefore app requires at least two weeks of input data to learn how to predict your symptoms, which is called the onboarding process. During this time, the WellBefore app will ask you to report what symptoms you are currently experiencing. This is logged alongside your current heart rate, steps, and other biometric data you provide access to. Once there is enough data, WellBefore is ready for training.
+
+## Training
+
+<Aside type="caution">WellBefore may not work for everyone. This depends on if the biometric data WellBefore has access to is indicative of your symptom state. If you are getting poor results, try providing more input data or provide more biometrics to WellBefore</Aside>
+
+After about two weeks, WellBefore should have enough data to train a model that can predict when symptoms are expected. After model training a predictability score is provided, which indicates how well you should expect the model to perform. If you have a low prediction score (0.6 or lower), then you may want to provide additional data points to help the model learn more about you.
+
+If the prediction score is high, you can enable the WellBefore prediction model and start receiving alerts when the model is alerted that symptoms may arise. You can give feedback on these alerts to give the model more data points for even better accuracy.
+

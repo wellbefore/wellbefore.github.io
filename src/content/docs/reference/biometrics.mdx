@@ -1,0 +1,17 @@
+---
+title: Biometrics
+description: f
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+
+WellBefore uses different biometric data to train a model that can predict your symptoms. This is usually collected from smart watches or phones, but devices that can be integrated with Apple Health or Android's Health Connect are supported.
+
+## Apple Health
+
+WellBefore can integrate with Apple Health to get access to your heart rate, steps, and other data. This is done by using the HealthKit API, which allows WellBefore to read and write data to the Apple Health app. You can choose which data WellBefore has access to, and **you can revoke access at any time**.
+
+## Health Connect
+
+<Aside type="caution">Due to development difficulties, HealthConnect is a low priority.</Aside>
