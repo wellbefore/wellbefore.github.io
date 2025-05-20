@@ -3,17 +3,21 @@ title: Getting Started
 description: Guide to how to use the WellBefore app
 ---
 
+import { Steps } from '@astrojs/starlight/components';
+import { Card, CardGrid } from '@astrojs/starlight/components';
 import { Aside } from '@astrojs/starlight/components';
 
-## Onboarding
+<Steps>
+1. <strong>Download the app</strong> from the App Store or Google Play Store.
 
-The WellBefore app requires at least two weeks of input data to learn how to predict your symptoms, which is called the onboarding process. During this time, the WellBefore app will ask you to report what symptoms you are currently experiencing. This is logged alongside your current heart rate, steps, and other biometric data you provide access to. Once there is enough data, WellBefore is ready for training.
+    <Aside type="caution" title="Android Status">iOS is the primary focus for development. After the iOS app is in a steady state, the Android version will be released.</Aside>
 
-## Training
+2. <strong>Set up data</strong> by sharing selected health data with WellBefore. It is reccommended to use a smartwatch with heart rate monitoring, as it will provide consistent and automatic data collection. You can choose which data WellBefore has access to, and you can revoke access at any time.
 
-<Aside type="caution">WellBefore may not work for everyone. This depends on if the biometric data WellBefore has access to is indicative of your symptom state. If you are getting poor results, try providing more input data or provide more biometrics to WellBefore</Aside>
+    For more information on the data that WellBefore uses, see the [Biometrics](/reference/biometrics/) page.
 
-After about two weeks, WellBefore should have enough data to train a model that can predict when symptoms are expected. After model training a predictability score is provided, which indicates how well you should expect the model to perform. If you have a low prediction score (0.6 or lower), then you may want to provide additional data points to help the model learn more about you.
+3. <strong>Start onboarding</strong> by taking measurements and answering questions about your health. This will help WellBefore learn about your body and how it reacts to different situations.
+4. <strong>Use the app</strong> to track your symptoms and receive alerts when symptoms are expected to worsen. You can also use the app to view your health data and see how it changes over time.
+</Steps>
 
-If the prediction score is high, you can enable the WellBefore prediction model and start receiving alerts when the model is alerted that symptoms may arise. You can give feedback on these alerts to give the model more data points for even better accuracy.
-
+For more information on how to use the app, see the [About](/guides/onboarding/) page.
